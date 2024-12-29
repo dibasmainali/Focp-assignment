@@ -1,0 +1,13 @@
+Chat session with dibas:
+User: course
+Agent: dibas, Can you provide more details about your question?
+User: details
+Agent: dibas, Can you provide more details about your question?
+User: fees
+Agent: I'm not sure about that. Can you clarify?
+User: cost
+Agent: dibas, Our tuition fees vary by program. Please visit our fees page for detailed information.
+User: details
+Agent: I'm here to help, but I might need more information.
+User: bye
+Agent: It was nice chatting with you, dibas. Goodbye!
