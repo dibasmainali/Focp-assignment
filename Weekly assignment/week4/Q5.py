@@ -1,23 +1,13 @@
 # Question 5: Temperature Conversion Functions
-# This program provides functions to convert between Celsius and Fahrenheit
-
 def celsius_to_fahrenheit(celsius):
     """
     Convert Celsius to Fahrenheit
-    Args:
-        celsius: Temperature in Celsius
-    Returns:
-        float: Temperature in Fahrenheit
     """
     return (celsius * 9/5) + 32
 
 def fahrenheit_to_celsius(fahrenheit):
     """
     Convert Fahrenheit to Celsius
-    Args:
-        fahrenheit: Temperature in Fahrenheit
-    Returns:
-        float: Temperature in Celsius
     """
     return (fahrenheit - 32) * 5/9
 

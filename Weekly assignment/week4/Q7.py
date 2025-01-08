@@ -1,21 +1,22 @@
-# Question 8: Temperature Statistics Calculator (Variable Input)
-# This program reads any number of temperatures until Enter is pressed
-# and displays the maximum, minimum, and mean values
+# Question 7: Temperature Statistics Calculator
+def celsius_to_fahrenheit(celsius):
+    """
+    Convert Celsius to Fahrenheit
+    """
+    return (celsius * 9/5) + 32
 
 def process_temperatures():
     """
-    Process multiple temperature inputs and calculate statistics
-    Input terminates when user presses Enter without value
+    Process exactly 6 temperature inputs and calculate statistics
     """
     temperatures = []
+    required_temps = 6
     
-    print("Enter temperatures in format 'numberC' (press Enter to finish):")
+    print(f"Please enter {required_temps} temperatures in format 'numberC':")
     
-    while True:
+    while len(temperatures) < required_temps:
         temp_input = input(f"Temperature {len(temperatures) + 1}: ")
-        if temp_input == "":
-            break
-            
+        
         if temp_input.endswith('C'):
             try:
                 temp_c = float(temp_input[:-1])
@@ -30,12 +31,10 @@ def process_temperatures():
         min_temp = min(temperatures)
         mean_temp = sum(temperatures) / len(temperatures)
         
-        print(f"\nProcessed {len(temperatures)} temperatures")
+        print(f"\nStatistics:")
         print(f"Maximum: {max_temp}C")
         print(f"Minimum: {min_temp}C")
         print(f"Mean: {mean_temp:.1f}C")
-    else:
-        print("No valid temperatures entered")
 
 if __name__ == "__main__":
     process_temperatures()

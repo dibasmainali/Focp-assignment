@@ -1,14 +1,8 @@
 # Question 6: Temperature Input Converter
-# This program takes a temperature in the format "numberC"
-# and converts it to Fahrenheit
 
 def celsius_to_fahrenheit(celsius):
     """
     Convert Celsius to Fahrenheit
-    Args:
-        celsius: Temperature in Celsius
-    Returns:
-        float: Temperature in Fahrenheit
     """
     return (celsius * 9/5) + 32
 
